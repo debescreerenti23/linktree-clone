@@ -1,0 +1,93 @@
+:root {
+    --bgbody: #f2f0f8;
+    --h1: #333;
+    --hoveravatar: #a04f4f;
+    --hoverbutton: #864545;
+    --boxshadow: rgba(0,0,0,0.1);
+}
+/* 1. Reset básico para que todo se vea igual en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* 2. El cuerpo de la página: Fondo y centrado total */
+body {
+    background-color: var(--bgbody); /* Un gris muy clarito */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente */
+    min-height: 100vh;      /* Ocupa todo el alto de la pantalla */
+    padding-top: 50px;
+}
+
+/* 3. El contenedor principal */
+.contenedor {
+    width: 100%;
+    max-width: 400px; /* Evita que en PC se estire demasiado */
+    text-align: center;
+    padding: 20px;
+}
+
+/* 4. Estilo para la foto de perfil */
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    /*Lahacecircular*/margin-bottom: 15px;
+    object-fit: cover;
+    border-style:groove;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.avatar:hover {
+    border-color: var(--hoveravatar) ;
+    transform: translateY(-5px);
+    width: 120px;
+    height: 120px;
+    
+}
+
+h1 {
+    font-size: 1.2rem;
+    color: var(--h1);
+    margin-bottom: 30px;
+}
+
+/* 5. Los botones (clase que añadimos con JavaScript) */
+.enlace-estilo {
+    display: block; /* Hace que ocupen todo el ancho disponible */
+    background-color: #ffffff;
+    color: #1a1a1a;
+    text-decoration: none; /* Quita el subrayado azul */
+    margin-bottom: 16px;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;    /* Bordes redondeados */
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s; /* Animación suave */
+}
+
+/* Efecto al pasar el ratón o tocar el botón */
+.enlace-estilo:hover {
+    transform: translateY(-3px); /* Se eleva un poquito */
+    box-shadow: 0 4px 12px var(--boxshadow);
+    background-color: var(--hoverbutton)
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    color: var(--footercolor);
+    border-top: 1px solid rgba(0,0,0,0.05);
+    margin-top: 40px;
+}
