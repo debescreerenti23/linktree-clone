@@ -1,9 +1,10 @@
 :root {
-    --bgbody: #f2f0f8;
-    --h1: #333;
-    --hoveravatar: #a04f4f;
-    --hoverbutton: #864545;
+    --bgbody: #000000;
+    --h1: #645858;
+    --hoveravatar: #3d8b4e;
+    --hoverbutton: #3d8b4e;
     --boxshadow: rgba(0,0,0,0.1);
+    --footercolor: #f7f5f3;
 }
 /* 1. Reset básico para que todo se vea igual en todos los navegadores */
 * {
@@ -65,7 +66,7 @@ h1 {
 /* 5. Los botones (clase que añadimos con JavaScript) */
 .enlace-estilo {
     display: block; /* Hace que ocupen todo el ancho disponible */
-    background-color: #ffffff;
+    background-color: #96c75d;
     color: #1a1a1a;
     text-decoration: none; /* Quita el subrayado azul */
     margin-bottom: 16px;
