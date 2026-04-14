@@ -92,3 +92,20 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.05);
     margin-top: 40px;
 }
+
+/* Si la pantalla mide menos de 600px (móviles) */
+@media (max-width: 600px) {
+    body {
+        padding-top: 15px; /* Margen muy pequeño arriba */
+    }
+
+    .contenedor {
+        padding: 10px;    /* Reducimos el aire a los lados */
+    }
+
+    .avatar {
+        width: 80px;      /* Hacemos la foto un pelín más pequeña */
+        height: 80px;
+        margin-bottom: 10px;
+    }
+}
