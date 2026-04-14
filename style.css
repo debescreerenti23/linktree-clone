@@ -3,7 +3,7 @@
     --h1: #645858;
     --hoveravatar: #3d8b4e;
     --hoverbutton: #3d8b4e;
-    --boxshadow: rgba(0,0,0,0.1);
+    --boxshadow: #645858;
     --footercolor: #f7f5f3;
 }
 /* 1. Reset básico para que todo se vea igual en todos los navegadores */
@@ -23,7 +23,7 @@ body {
     align-items: center;
     justify-content: center; /* Centra horizontalmente */
     min-height: 100vh;      /* Ocupa todo el alto de la pantalla */
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 /* 3. El contenedor principal */
@@ -38,8 +38,8 @@ body {
 .avatar {
     width: 96px;
     height: 96px;
-    border-radius: 50%;
-    /*Lahacecircular*/margin-bottom: 15px;
+    border-radius: 50%;/*La hace circular*/
+    margin-bottom: 15px;
     object-fit: cover;
     border-style:groove;
     transition: all 0.5s ease;
